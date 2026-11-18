@@ -58,12 +58,30 @@
             //Console.ReadKey();
             #endregion
             #region
-            //Q07. Given string pagesText = "464";, convert it into an int using the Convert class.
-            string pagesText = "464";
-            int intPageText = Convert.ToInt32(pagesText);
-            Console.WriteLine(intPageText);
-            Console.ReadKey();
+            ////Q07. Given string pagesText = "464";, convert it into an int using the Convert class.
+            //string pagesText = "464";
+            //int intPageText = Convert.ToInt32(pagesText);
+            //Console.WriteLine(intPageText);
+            //Console.ReadKey();
             #endregion
+            #region
+            //Q08. Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";,
+            // use int.TryParse() to safely try converting it, and print "Invalid number" if it fails.
+             string yearText = "2023";
+            int year = int.Parse(yearText);
+            Console.WriteLine(year);
+            string badText = "abc";
+            int badNumber;
+            if(int.TryParse(badText, out badNumber))
+            {
+                Console.WriteLine(badNumber);
+            }
+            else
+            {
+                Console.WriteLine("Invalid number");
+            }
+            #endregion
+        
 
 
         }
