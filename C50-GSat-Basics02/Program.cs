@@ -88,6 +88,16 @@
             //string pagesString = pages.ToString();
             //Console.WriteLine(pagesString.GetType());
             #endregion
+
+            #region
+            // Q10.Declare int copies = 100;. Box it into an object variable, then unbox it back into a new int
+            //variable, and print both.
+            int copies = 100;
+            object obj = copies; 
+            int unboxedCopies = (int)obj;
+            Console.WriteLine(obj);
+            Console.WriteLine(unboxedCopies);
+            #endregion
             Console.ReadKey();
 
 
