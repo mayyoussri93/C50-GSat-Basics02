@@ -14,17 +14,38 @@
             #endregion
             #region
             //Q02.Using the Book class above, print the result of calling ToString(), Equals() (compare book with itself), GetHashCode(), and GetType() on book.
-            Console.WriteLine(book.ToString());
+            //Console.WriteLine(book.ToString());
             //Console.WriteLine(book.Equals(book));
             //Console.WriteLine(book.GetHashCode());
             //Console.WriteLine(book.GetType());
             #endregion
             #region
-            //Q03. Look at the line below. Is it a compile-time error, a runtime error, or a logical error? Fix it.
-            int pages = "464";
-            // is compile-time error the correct answer
-            int pages = 464;
+            ////Q03. Look at the line below. Is it a compile-time error, a runtime error, or a logical error? Fix it.
+            //int pages = "464";
+            //// is compile-time error the correct answer
+            //int pages = 464;
             #endregion
+            #region
+            //Q04. Write code that divides 10 by 0 inside a try block, catches the exception, prints "Cannot divide by
+            //zero", and then prints "Done" in a finally block
+            try
+            {
+                int x = 10;
+                int y = 0;
+                int result = x / y;
+                Console.WriteLine(result);
+            }
+            catch (DivideByZeroException)
+            {
+                Console.WriteLine("Cannot divide by zero");
+            }
+            finally
+            {
+                Console.WriteLine("Done");
+            }
+            Console.ReadKey();
+            #endregion
+
 
         }
     }
